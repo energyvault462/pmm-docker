@@ -1,0 +1,6 @@
+docker run --rm -it \
+  --name=pmm \
+  --hostname=pmm \
+  -v /log:/log \
+  --device=/dev/usb/hiddev0 \
+   energyvault462/pmm
