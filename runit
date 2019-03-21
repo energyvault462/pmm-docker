@@ -1,6 +1,12 @@
 docker run --rm -it \
   --name=pmm \
   --hostname=pmm \
-  -v /log:/log \
+  -v /logs:/logs \
   --device=/dev/usb/hiddev0 \
-   energyvault462/pmm
+  -e PVE_IP=${PVE_IP} \
+  -e PVE_PORT=${PVE_PORT} \
+  -e PVE_MAC=${PVE_MAC} \
+  -e PVE_USER=${PVE_USER} \
+  -e PMM_UP=${PMM_UP} \
+  -e PMM_DOWN=${PMM_DOWN} \
+  energyvault462/pmm
