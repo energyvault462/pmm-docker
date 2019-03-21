@@ -16,5 +16,6 @@ RUN sed -i "s/UPSCABLE smart/UPSCABLE usb/g" /etc/apcupsd/apcupsd.conf && \
     sed -i "s/DEVICE \/dev\/ttyS0/DEVICE/g" /etc/apcupsd/apcupsd.conf && \
     sed -i "s/ISCONFIGURED\=no/ISCONFIGURED\=yes/g" /etc/default/apcupsd
 
+COPY app.sh .
 
-CMD ["/bin/bash"]
+CMD ["/go/bin/app.sh"]
