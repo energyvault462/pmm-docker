@@ -16,7 +16,6 @@ RUN go build
 RUN go install
 WORKDIR /go/bin/
 
-RUN ls .
 COPY app.sh .
 
 #CMD ["/bin/bash"]

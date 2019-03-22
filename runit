@@ -1,4 +1,4 @@
-docker run --rm -it \
+docker run --rm \
   --name=pmm \
   --hostname=pmm \
   -v /logs:/logs \

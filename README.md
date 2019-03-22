@@ -1,8 +1,10 @@
 # pmm-docker
-Docker container for proxmox-monitor
+Docker container for proxmox-monitor. APC battery backup required.
 
-Runs correctly if go in via bin/bash and run the app.sh manually.
-Doesn't work if using a CMD or ENTRYPOINT.... APCUPSD isn't working unless
-it is done manually for some reason. 
+To build:
+./buildIt
 
-TODO: fix apcupsd to run automatically. That *should* fix the problems
+To run:
+./runIt
+
+Set the variables needed in runIt to environmental variables before running.
